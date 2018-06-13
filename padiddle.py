@@ -2,7 +2,8 @@ users = {}
 
 #add new user
 def add_user():
-    while len(users) < 2:
+    num_users = input("Enter the number of players: ")
+    while len(users) < int(num_users):
         new_user = input("Enter Name: ")
         users[new_user.lower()] = 0
     return users
